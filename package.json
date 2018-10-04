@@ -1,0 +1,37 @@
+{
+  "name": "@stencil/webChat",
+  "private": true,
+  "version": "0.0.1",
+  "description": "First webChat",
+  "scripts": {
+    "build": "stencil build --prerender",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec",
+    "test.watch": "stencil test --spec --watchAll"
+  },
+  "dependencies": {
+    "@firebase/auth": "^0.7.7",
+    "@ionic/core": "^4.0.0-beta.12",
+    "@stencil/core": "0.13.2",
+    "@stencil/router": "^0.3.0",
+    "@stencil/sass": "^0.1.1",
+    "bootstrap": "^4.1.3",
+    "firebase": "^5.5.2",
+    "ionic": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Byakusik/webChat.git"
+  },
+  "author": "byakakryaka@gmail.com",
+  "license": "",
+  "bugs": {
+    "email": "byakakryaka@gmail.com"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@types/jest": "23.3.3",
+    "jest": "23.5.0",
+    "jest-environment-node": "23.4.0"
+  }
+}

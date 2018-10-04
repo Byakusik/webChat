@@ -1,0 +1,14 @@
+username-button {
+  #dropdownBtn {
+    &:after {
+      vertical-align: middle;
+      border-top: 8px solid;
+    }
+
+    &.opened:after {
+      vertical-align: middle;
+      border-top: none;
+      border-bottom: 8px solid;
+    }
+  }
+}

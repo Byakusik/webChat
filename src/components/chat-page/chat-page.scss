@@ -1,0 +1,128 @@
+chat-page {
+  .chat-form {
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0px 0px 6px rgba(0,0,0,0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #039be5;
+      outline: 1px solid #76A42A;
+    }
+
+    margin-top: 5%;
+
+    .chat-area {
+      -webkit-transition: all 1s;
+      background: #ECEFF1;
+      border: 2px solid #039be5;
+      border-radius: 8px;
+      padding: 15px;
+      max-height: 540px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+
+      &:hover::-webkit-scrollbar  {
+        width: 12px;
+      }
+
+      .message-container {
+        background: #FFFFFF;
+        border: 1px solid #039be5;
+        border-radius: 25px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        * {
+          display: inline-block;
+        }
+
+        .message-container-header {
+          width: 100%;
+
+          .name {
+            background: #039be5;
+            padding: 4px 6px;
+            min-width: 100px;
+            border-radius: 10px 25px;
+            text-align: center;
+          }
+
+          .timestamp {
+            font-size: 10px;
+          }
+        }
+
+        .message {
+          display: block;
+        }
+
+        &.right {
+          .message {
+            text-align: right;
+          }
+
+          .message-container-header {
+            .name, .timestamp {
+              float: right;
+              margin-left: 5px;
+            }
+
+            .name {
+              border-radius: 25px 12px;
+            }
+
+            .timestamp {
+              margin-top: 8px;
+            }
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+
+  .message-area {
+
+    .input-group-text, input, button#sendBtn {
+      border: 1px solid #039be5;
+    }
+
+    button#sendBtn {
+      color: #037bc5;
+      font-weight: 600;
+    }
+
+    .name {
+      cursor: pointer;
+
+      .username-dropdown-menu {
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        background-color: #ffffff;
+        border: 1px solid #039be5;
+        border-radius: 4px;
+        padding: 10px 0;
+        min-width: 100px;
+        z-index: 9999;
+
+        .menu-item {
+          cursor: pointer;
+
+          &:hover {
+            background-color: #eeeeee;
+          }
+        }
+      }
+    }
+
+  }
+}
